@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Client.Views.InicioView"
+             Title="InicioView">
+    <StackLayout Background="#7c1caa">
+        <Image Source="logo" 
+               Margin="30,90,30,30"></Image>
+
+        <Label TextColor="#feb930" 
+               Margin="20" 
+               FontSize="20" 
+               HorizontalTextAlignment="Center">Encuesta de satisfacción</Label>
+
+        <Button Command="{Binding IniciarCommand}" 
+                CornerRadius="10" 
+                FontAttributes="Bold" 
+                Margin="20" 
+                BackgroundColor="#feb930" 
+                TextColor="#ee3c2e" 
+                Text="I N I C I A R"></Button>
+
+        <Label IsVisible="{Binding IsLoading}" 
+               TextColor="Crimson"
+               Margin="40" 
+               FontSize="20" 
+               HorizontalTextAlignment="Center">C A R G A N D O</Label>
+
+    </StackLayout>
+</ContentPage>
